@@ -25,8 +25,13 @@ client.on(Events.MessageCreate, async(message) =>{
 
     //text command handler
     try {
-        run(message)
-        avatar(message)
+        if (args === 'say') {
+            run(message);
+        } else if (args === 'avatar') {
+            avatar(message);
+        } else {
+            message.reply('Comando no reconocido.')
+        }
     } catch (error) {
         console.log(`Ha ocurrido un error al utilizar el comando .${args}`, error.message);
     }
