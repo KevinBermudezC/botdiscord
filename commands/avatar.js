@@ -11,9 +11,5 @@ export async function avatar(message) {
         .setTitle(`Avatar de <@${member.user.displayName}>`)
         .setImage(avatar)
     
-    message.reply({embeds : [embed]})
-
-    
-
-        
+    message.reply({embeds : [embed]})       
 }

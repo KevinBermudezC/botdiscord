@@ -3,6 +3,5 @@ export async function run(message) {
     const args = message.content.split(' ').slice(1).join(' ');
     
     if (args.length < 1) return message.reply('Provee un argumento valido.');
-    message.reply(args);
-        
+    message.reply(args);   
 }
