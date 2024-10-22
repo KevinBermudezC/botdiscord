@@ -1,4 +1,4 @@
-# botdiscord
+# Bot Discord
 
 This repository contains a Discord bot implemented in JavaScript.
 
